@@ -15,10 +15,6 @@ class GatherStep < Formula
     end
   end
 
-  on_linux do
-    disable! date: "2026-04-30", because: "only macOS binaries are provided"
-  end
-
   def install
     arch = Hardware::CPU.arm? ? "aarch64-apple-darwin" : "x86_64-apple-darwin"
     bin.install "gather-step-#{arch}" => "gather-step"
