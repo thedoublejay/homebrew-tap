@@ -1,7 +1,6 @@
 class GatherStep < Formula
   desc "Local-first code graph for multi-repo workspaces and AI coding assistants"
   homepage "https://github.com/thedoublejay/gather-step"
-  version "1.0.0"
   license "MIT"
 
   on_macos do
