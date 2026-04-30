@@ -3,6 +3,10 @@ class GatherStep < Formula
   homepage "https://gatherstep.dev"
   license "MIT"
 
+  on_linux do
+    disable! date: "2026-04-30", because: "only macOS binaries are provided"
+  end
+
   on_macos do
     on_arm do
       url "https://github.com/thedoublejay/gather-step/releases/download/v2.0.0/gather-step-v2.0.0-aarch64-apple-darwin.tar.gz"
