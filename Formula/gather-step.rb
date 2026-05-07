@@ -5,13 +5,13 @@ class GatherStep < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/thedoublejay/gather-step/releases/download/v3.5.3/gather-step-v3.5.3-aarch64-apple-darwin.tar.gz"
-      sha256 "cc687f3d2e1b25c51f810ec448ff7c1e8e1427ee0998ee46a456d661adf2c9c1"
+      url "https://github.com/thedoublejay/gather-step/releases/download/v4.0.0/gather-step-v4.0.0-aarch64-apple-darwin.tar.gz"
+      sha256 "9a298b68153b67a92025e24058136762a6e4050c9d2dfd1f3addf2deb729d444"
     end
 
     on_intel do
-      url "https://github.com/thedoublejay/gather-step/releases/download/v3.5.3/gather-step-v3.5.3-x86_64-apple-darwin.tar.gz"
-      sha256 "206692e1ff89aadf5e363fe2cfe7269956b83d318d5d2ba81edcfa5c30c4e489"
+      url "https://github.com/thedoublejay/gather-step/releases/download/v4.0.0/gather-step-v4.0.0-x86_64-apple-darwin.tar.gz"
+      sha256 "5a1767e8ebe6d5eda4769c2497cfe1da080e073dd476105166177a1bb6ce4bd1"
     end
   end
 
