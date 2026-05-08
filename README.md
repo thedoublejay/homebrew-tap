@@ -1,6 +1,6 @@
 # thedoublejay tap
 
-Homebrew tap for `gather-step`.
+Homebrew tap for `gather-step` on macOS and Linux.
 
 ## Install
 
@@ -33,7 +33,7 @@ Or explicitly:
 brew upgrade thedoublejay/tap/gather-step
 ```
 
-Important: `brew upgrade` only picks up new releases when the formula version in this tap is bumped. For a normal upgrade flow, publish semver releases for `gather-step` such as `v0.1.0`, `v0.1.1`, and update the formula accordingly.
+Important: `brew upgrade` only picks up new releases when the formula version in this tap is bumped. For the normal upgrade flow, publish semver releases for `gather-step` such as `v4.0.4`, `v4.0.5`, and update the formula accordingly.
 
 ## Included Formulae
 
@@ -53,14 +53,14 @@ This tap includes the current Homebrew GitHub Actions workflow layout:
 Recommended release flow:
 
 1. Cut a tagged release in `thedoublejay/gather-step`, ideally `vX.Y.Z`.
-2. Update [`Formula/gather-step.rb`](Formula/gather-step.rb) to the new release source and version.
+2. Update [`Formula/gather-step.rb`](Formula/gather-step.rb) to the new release URLs, source archive, and checksums.
 3. Open a pull request in this tap.
 4. Wait for `brew test-bot` to pass.
 5. Add the `pr-pull` label to publish bottles and merge the formula update.
 
 ## Current Packaging Note
 
-`gather-step` does not currently have a published git tag in the source repository, so this tap pins the formula to a specific upstream commit as a bootstrap release. That is enough to install and bottle the formula from this tap, but tagged upstream releases are the better long-term setup and are what you want for a predictable `brew upgrade` experience.
+The tap installs prebuilt release archives on macOS and builds from the tagged source archive on Linux. This avoids pointing Linux Homebrew users at a missing prebuilt artifact while still exercising the Linux source-build path in CI.
 
 ## Local Validation
 
