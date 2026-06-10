@@ -1,8 +1,8 @@
 class GatherStep < Formula
   desc "Local-first code graph for multi-repo workspaces and AI coding assistants"
   homepage "https://gatherstep.dev"
-  url "https://github.com/thedoublejay/gather-step/archive/refs/tags/v4.4.0.tar.gz"
-  sha256 "1b69e43f9dc0cdc778f22d6fa9ab195e79a3f7a5fd7504397cf29fdd2eaaa914"
+  url "https://github.com/thedoublejay/gather-step/archive/refs/tags/v4.4.1.tar.gz"
+  sha256 "506a85e43aac2f701fc5d4567bbb2a0143ae569debac6356caae44a593603e16"
   license "MIT"
 
   on_linux do
@@ -10,13 +10,13 @@ class GatherStep < Formula
   end
 
   resource "gather-step-aarch64-apple-darwin" do
-    url "https://github.com/thedoublejay/gather-step/releases/download/v4.4.0/gather-step-v4.4.0-aarch64-apple-darwin.tar.gz"
-    sha256 "3ed062403b50e0c3f634d3ed7bc8aa4a4f3c401a67df51c111943e5d39de95d5"
+    url "https://github.com/thedoublejay/gather-step/releases/download/v4.4.1/gather-step-v4.4.1-aarch64-apple-darwin.tar.gz"
+    sha256 "3d30f4b93771f3d6fcef82537cdaab94a5cef493c6e913ea544750c734edd19f"
   end
 
   resource "gather-step-x86_64-apple-darwin" do
-    url "https://github.com/thedoublejay/gather-step/releases/download/v4.4.0/gather-step-v4.4.0-x86_64-apple-darwin.tar.gz"
-    sha256 "7ae7d63670cbb56b7ade28a4131b022dd3ed2f3d3ca9273148bf940a63b5f923"
+    url "https://github.com/thedoublejay/gather-step/releases/download/v4.4.1/gather-step-v4.4.1-x86_64-apple-darwin.tar.gz"
+    sha256 "3d8f2afd8540c11f0e66c05a24ef44aaf14047fd6f352088c893fac1b2088b59"
   end
 
   def install
